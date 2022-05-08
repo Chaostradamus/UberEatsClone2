@@ -4,7 +4,7 @@ import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplif
 
 
 
-type DIshMetaData = {
+type DishMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
 
@@ -12,7 +12,7 @@ type RestaurantMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
 
-export declare class DIsh {
+export declare class Dish {
   readonly id: string;
   readonly name: string;
   readonly image?: string | null;
@@ -21,8 +21,8 @@ export declare class DIsh {
   readonly restaurantID: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
-  constructor(init: ModelInit<DIsh, DIshMetaData>);
-  static copyOf(source: DIsh, mutator: (draft: MutableModel<DIsh, DIshMetaData>) => MutableModel<DIsh, DIshMetaData> | void): DIsh;
+  constructor(init: ModelInit<Dish, DishMetaData>);
+  static copyOf(source: Dish, mutator: (draft: MutableModel<Dish, DishMetaData>) => MutableModel<Dish, DishMetaData> | void): Dish;
 }
 
 export declare class Restaurant {
@@ -36,7 +36,7 @@ export declare class Restaurant {
   readonly address: string;
   readonly lat: number;
   readonly lng: number;
-  readonly DIshes?: (DIsh | null)[] | null;
+  readonly DIshes?: (Dish | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   constructor(init: ModelInit<Restaurant, RestaurantMetaData>);

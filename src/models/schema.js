@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "DIsh": {
-            "name": "DIsh",
+        "Dish": {
+            "name": "Dish",
             "fields": {
                 "id": {
                     "name": "id",
@@ -63,7 +63,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "DIshes",
+            "pluralName": "Dishes",
             "attributes": [
                 {
                     "type": "model",
@@ -173,7 +173,7 @@ export const schema = {
                     "name": "DIshes",
                     "isArray": true,
                     "type": {
-                        "model": "DIsh"
+                        "model": "Dish"
                     },
                     "isRequired": false,
                     "attributes": [],
@@ -228,5 +228,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "92c1240eb276a8f8145da0d356cc1516"
+    "version": "d493bce593d2b744c53332db2a39b815"
 };
